@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  background-color: #8f796c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section {
+  height: 700px;
+  width: 100%;
+  background-image: url(./images/coffee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fefefe;
+  position: relative;
+}
+
+.navbar {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+}
+.header {
+  height: 90px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+.left-head {
+  height: 90px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.left-head a {
+  text-decoration: none;
+  margin: 20px;
+  color: black;
+  font-size: 18px;
+}
+.right-head {
+  height: 90px;
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.right-head a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.next-part {
+  height: 400px;
+  width: 80%;
+  position: relative;
+  top: 20px;
+  left: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  height: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.text h1 {
+  font-size: 50px;
+  height: 30px;
+  line-height: 50px;
+  color: #7c6c5d;
+}
+.text p {
+  color: #7c6c5d;
+  position: relative;
+  left: 5px;
+}
+
+.text .spn1 {
+  height: 20px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.text .spn1 button {
+  height: 45px;
+  width: 40%;
+  position: relative;
+  bottom: 40px;
+  color: #7c6c5d;
+  background-color: #edb82b;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  left: 2px;
+}
+.text .spn1 button:hover {
+  background-color: red;
+  color: white;
+}
+.text .spn1 a {
+  height: 50px;
+  width: 30%;
+  position: relative;
+  bottom: 30px;
+  font-weight: 600;
+  color: #7c6c5d;
+  border-bottom: #7c6c5d;
+  margin-left: 20px;
+}
+.text .spn1 a:hover {
+  color: green;
+}
+
+.image {
+  height: 500px;
+  width: 50%;
+}
+
+.img {
+  height: 500px;
+  width: 500px;
+  background-image: url(./images/new_fabula-removebg-preview.png);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 20px;
+}
+.footer {
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+.box {
+  height: 30px;
+  width: 25%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box:nth-child(1) {
+  width: 35%;
+  visibility: hidden;
+}
+.box:nth-child(2) {
+  border-left: hidden;
+  border-top: hidden;
+  border-bottom: hidden;
+  border-color: #8f796c;
+}
+.box:nth-child(3) {
+  border-left: hidden;
+  border-top: hidden;
+  border-bottom: hidden;
+  border-color: #8f796c;
+}
+
+.box:nth-child(4) {
+  border-left: hidden;
+  border-top: hidden;
+  border-bottom: hidden;
+  border-color: #8f796c;
+}
+.box p {
+  color: #edb82b;
+  font-weight: 700;
+}
+
+.box h1 {
+  font-size: medium;
+  color: #7c6c5d;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+  }
+  .navbar {
+    height: auto;
+  }
+  .hero-section {
+    height: auto;
+  }
+  .left-head {
+    height: 90px;
+    width: 80%;
+  }
+  .header {
+    height: auto;
+  }
+  .left-head a {
+    text-decoration: none;
+    margin: 10px;
+  }
+  .right-head {
+    height: 90px;
+    width: 20%;
+  }
+  .next-part {
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .text {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  .text h1 br {
+    display: none;
+  }
+  .text h1 {
+    font-size: 30px;
+    height: 50px;
+    line-height: 30px;
+    color: #7c6c5d;
+  }
+  .text p br {
+    display: none;
+  }
+  .text p {
+    font-size: 15px;
+    height: 50px;
+  }
+  .text .spn1 {
+    height: 50px;
+  }
+  .text .spn1 button {
+    height: 40px;
+    position: relative;
+    top: 0;
+  }
+  .text .spn1 a {
+    position: relative;
+    top: 20px;
+  }
+
+  .next-part .image {
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .img {
+    height: 500px;
+    width: 600px;
+  }
+  .box:nth-child(1) {
+    display: none;
+  }
+}
